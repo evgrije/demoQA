@@ -1,0 +1,12 @@
+plugins {
+    id 'java-library' //выбор языка программирования
+}
+repositories {
+    mavenCentral() //использование сторонних библиотек
+}
+
+dependencies {
+    testImplementation(
+            "com.codeborne:selenide:6.19.1" //использование библиотеки селенид (хотим взять селенид из сайта mavenCentral()
+    )
+}
