@@ -5,8 +5,13 @@ repositories {
     mavenCentral() //использование сторонних библиотек
 }
 
-dependencies {
+dependencies { //зависимости
     testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.10.0",
             "com.codeborne:selenide:6.19.1" //использование библиотеки селенид (хотим взять селенид из сайта mavenCentral()
     )
+}
+
+test {
+    useJUnitPlatform() //использование приколов junit (например зеленая кнопка)
 }
